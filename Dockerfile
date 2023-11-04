@@ -39,3 +39,6 @@ WORKDIR /opt/galera
 
 COPY --from=builder /opt/galera /opt/galera/dist
 
+VOLUME /dist
+
+CMD cp -rf dist/* /dist/
