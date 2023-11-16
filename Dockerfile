@@ -12,8 +12,8 @@ RUN set -ex \
     && apt-get install -y ${BUILD_DEPENDENCIES} \
     && echo "no" | dpkg-reconfigure dash
 
-ARG MARIADB_VERSION=10.6.15
-ARG GALERA_VERSION=26.4.14
+ARG MARIADB_VERSION=10.6.16
+ARG GALERA_VERSION=26.4.16
 
 WORKDIR /opt/galera
 
